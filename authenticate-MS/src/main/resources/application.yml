@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name:
+      authenticate-MS
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  sql:
+    init:
+      platform: postgres
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://isilo.db.elephantsql.com:5432/sjygsmii
+    username: sjygsmii
+    password: Rc_jdfVc6D8qlrpJB-Aqk8GQPO3SnSvf

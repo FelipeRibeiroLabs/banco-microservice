@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  application:
+    name:
+      user-MS
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  sql:
+    init:
+      platform: postgres
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://isilo.db.elephantsql.com:5432/eyqcoaqz
+    username: eyqcoaqz
+    password: BR3v8ucNapWovJpQkek3rrntu1CcuBg2
+
+auth:
+  gerar: http://localhost:8081/auth/

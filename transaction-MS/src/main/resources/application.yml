@@ -1,0 +1,26 @@
+server:
+  port: 8083
+spring:
+  application:
+    name:
+      transaction-MS
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  sql:
+    init:
+      platform: postgres
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://isilo.db.elephantsql.com:5432/uvbijxdx
+    username: uvbijxdx
+    password: xZGL9UFwCgsMfgRccV3gHCUBskUSQVZw
+
+auth:
+  checktoken: http://localhost:8081/auth/
+transfer: http://localhost:8082/account/transfer/
